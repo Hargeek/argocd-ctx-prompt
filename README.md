@@ -112,4 +112,4 @@ alias argocdoff="argocd-ctx-prompt off"
 
 ## License
 
-MIT 
+[MIT](LICENSE)
