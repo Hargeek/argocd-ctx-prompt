@@ -1,8 +1,10 @@
 # argocd-ctx-prompt
 
-A simple command-line tool that displays the current ArgoCD context in your shell prompt. Inspired by the [kube-ps1](https://github.com/jonmosco/kube-ps1) project.
-
 English | [简体中文](README_zh.md)
+
+A simple command-line tool that displays the current ArgoCD context in your shell prompt.
+
+Inspired by the [kube-ps1](https://github.com/jonmosco/kube-ps1) project
 
 ## Features
 

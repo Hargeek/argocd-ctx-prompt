@@ -1,8 +1,10 @@
 # argocd-ctx-prompt
 
-一个简单的命令行工具，用于在命令行提示符中显示当前的 ArgoCD 上下文。灵感来源于 [kube-ps1](https://github.com/jonmosco/kube-ps1) 项目。
-
 [English](README.md) | 简体中文
+
+一个简单的命令行工具，用于在命令行提示符中显示当前的 ArgoCD 上下文
+
+灵感来源于 [kube-ps1](https://github.com/jonmosco/kube-ps1) 项目
 
 ## 功能
 
