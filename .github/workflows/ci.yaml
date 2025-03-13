@@ -28,5 +28,10 @@ jobs:
           distribution: goreleaser
           version: latest
           args: release --clean
+          workdir: .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # More info about the environment variables in the README
+          # https://github.com/goreleaser/goreleaser-action
+          # Enable auto-snapshot mode for non-tag pushes
+          SNAPSHOT: ${{ !startsWith(github.ref, 'refs/tags/') }}
