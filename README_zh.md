@@ -1,6 +1,11 @@
-# argocd-ctx-prompt
-
 [English](README.md) | 简体中文
+
+![Go Version](https://img.shields.io/badge/Go-%3E%3D%201.21-%23007d9c)
+[![GoDoc](https://godoc.org/github.com/hargeek/argocd-ctx-prompt?status.svg)](https://pkg.go.dev/github.com/hargeek/argocd-ctx-prompt)
+[![Contributors](https://img.shields.io/github/contributors/hargeek/argocd-ctx-prompt)](https://github.com/hargeek/argocd-ctx-prompt/graphs/contributors)
+[![License](https://img.shields.io/github/license/hargeek/argocd-ctx-prompt)](./LICENSE)
+
+# argocd-ctx-prompt
 
 一个简单的命令行工具，用于在命令行提示符中显示当前的 ArgoCD 上下文
 

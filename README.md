@@ -1,6 +1,11 @@
-# argocd-ctx-prompt
-
 English | [简体中文](README_zh.md)
+
+![Go Version](https://img.shields.io/badge/Go-%3E%3D%201.21-%23007d9c)
+[![GoDoc](https://godoc.org/github.com/hargeek/argocd-ctx-prompt?status.svg)](https://pkg.go.dev/github.com/hargeek/argocd-ctx-prompt)
+[![Contributors](https://img.shields.io/github/contributors/hargeek/argocd-ctx-prompt)](https://github.com/hargeek/argocd-ctx-prompt/graphs/contributors)
+[![License](https://img.shields.io/github/license/hargeek/argocd-ctx-prompt)](./LICENSE)
+
+# argocd-ctx-prompt
 
 A simple command-line tool that displays the current ArgoCD context in your shell prompt.
 
