@@ -6,7 +6,7 @@
 # yaml-language-server: $schema=https://goreleaser.com/static/schema.json
 # vim: set ts=2 sw=2 tw=0 fo=cnqoj
 
-version: 2
+project_name: argocd-ctx-prompt
 
 before:
   hooks:
@@ -24,8 +24,8 @@ builds:
       - darwin
 
 archives:
-  - formats: [tar.gz]
-    # this name template makes the OS and Arch compatible with the results of `uname`.
+  - format: tar.gz
+    # this name template makes the OS and Arch compatible with the results of uname.
     name_template: >-
       {{ .ProjectName }}_
       {{- title .Os }}_
@@ -35,21 +35,17 @@ archives:
       {{- if .Arm }}v{{ .Arm }}{{ end }}
     # use zip for windows archives
     format_overrides:
-      - goos: windows
-        formats: [zip]
+    - goos: windows
+      format: zip
 
 changelog:
   sort: asc
   filters:
     exclude:
-      - "^docs:"
-      - "^test:"
+      - '^docs:'
+      - '^test:'
 
 release:
-  footer: >-
-
+  footer: |
     ---
-
-    Released by [GoReleaser](https://github.com/goreleaser/goreleaser).
-
-project_name: argocd-ctx-prompt
+    Released by [GoReleaser](https://github.com/goreleaser/goreleaser)

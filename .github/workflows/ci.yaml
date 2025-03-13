@@ -21,17 +21,22 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.21'
+          go-version: '^1.21'
+      - name: Set GOVERSION
+        run: echo "GOVERSION=$(go version | sed -r 's/go version go(.*)\ .*/\1/')" >> $GITHUB_ENV
+      - name: Set AppVersion
+        run: echo "VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+      - name: Show version
+        run: echo ${{ env.GOVERSION }} ${{ env.VERSION }}
       - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v5
+        uses: goreleaser/goreleaser-action@v6
         with:
           distribution: goreleaser
-          version: latest
+          version: '~> v2'
           args: release --clean
-          workdir: .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # More info about the environment variables in the README
           # https://github.com/goreleaser/goreleaser-action
           # Enable auto-snapshot mode for non-tag pushes
-          SNAPSHOT: ${{ !startsWith(github.ref, 'refs/tags/') }}
+          # SNAPSHOT: ${{ !startsWith(github.ref, 'refs/tags/') }}
