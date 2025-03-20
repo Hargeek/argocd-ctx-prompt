@@ -20,7 +20,7 @@
 
 ## 示例
 
-[![asciicast](https://asciinema.org/a/lRCjrOWw0udr9lZnuCRGmIxlr.svg)](https://asciinema.org/a/lRCjrOWw0udr9lZnuCRGmIxlr)
+[![asciicast](https://asciinema.org/a/U8BL2Cvm5nURfy8CqFWBEtB7R.svg)](https://asciinema.org/a/U8BL2Cvm5nURfy8CqFWBEtB7R)
 
 ## 安装
 
