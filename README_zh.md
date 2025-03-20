@@ -18,6 +18,10 @@
 - 提供格式化的输出，可以集成到命令行提示符中
 - 支持开关功能，可以随时启用或禁用提示符显示
 
+## 示例
+
+[![asciicast](https://asciinema.org/a/lRCjrOWw0udr9lZnuCRGmIxlr.svg)](https://asciinema.org/a/lRCjrOWw0udr9lZnuCRGmIxlr)
+
 ## 安装
 
 有两种安装方式可供选择：

@@ -18,6 +18,10 @@ Inspired by the [kube-ps1](https://github.com/jonmosco/kube-ps1) project
 - Provides formatted output that can be integrated into your shell prompt
 - Supports toggle functionality to enable/disable the prompt display at any time
 
+## Example
+
+[![asciicast](https://asciinema.org/a/lRCjrOWw0udr9lZnuCRGmIxlr.svg)](https://asciinema.org/a/lRCjrOWw0udr9lZnuCRGmIxlr)
+
 ## Installation
 
 There are two installation methods available:
